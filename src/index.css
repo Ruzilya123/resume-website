@@ -1,0 +1,63 @@
+:root {
+  --night: #130b26;
+  --deep: #1f1145;
+  --violet: #9a6bff;
+  --orchid: #d78bff;
+  --rose: #ff7ad9;
+  --text: #f1ecff;
+  --muted: #b9aedb;
+  --line: rgba(241, 236, 255, 0.14);
+  --ok: #7cf0b5;
+
+  --font-display: 'Unbounded Variable', 'Arial Black', sans-serif;
+  --font-body: 'Golos Text Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--night);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--orchid);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: rgba(154, 107, 255, 0.45);
+}
