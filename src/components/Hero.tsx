@@ -28,8 +28,11 @@ export function Hero() {
         <p className="hero__place">{resume.location}</p>
 
         <div className="hero__actions">
-          <a className="btn btn--primary" href={`mailto:${resume.email}`}>
-            Написать на почту
+          <a className="btn btn--primary" href={resume.telegram} target="_blank" rel="noreferrer">
+            Написать в Telegram
+          </a>
+          <a className="btn" href={`mailto:${resume.email}`}>
+            Почта
           </a>
           <a className="btn" href={resume.github} target="_blank" rel="noreferrer">
             GitHub

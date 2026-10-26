@@ -27,13 +27,14 @@ export function Contact() {
   }
 
   const githubLabel = resume.github.replace(/^https?:\/\//, '')
+  const telegramLabel = '@' + resume.telegram.split('/').pop()
 
   return (
     <footer className="footer">
       <section className="contact glass" aria-labelledby="contact-title">
         <h2 id="contact-title">Давайте обсудим вакансию</h2>
         <p className="contact__text">
-          Ищу удалённую работу во frontend. Удобнее всего писать на почту.
+          Ищу работу во frontend — удалённо или гибрид. Пишите в Telegram или на почту.
         </p>
 
         <div className="contact__row">
@@ -46,6 +47,11 @@ export function Contact() {
         </div>
 
         <ul className="contact__links">
+          <li>
+            <a href={resume.telegram} target="_blank" rel="noreferrer">
+              Telegram {telegramLabel}
+            </a>
+          </li>
           <li>
             <a href={resume.github} target="_blank" rel="noreferrer">
               {githubLabel}
